@@ -232,3 +232,25 @@ body {
 .resume .resume_right .resume_hobby ul li:last-child:before {
   display: none;
 }
+
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: lightgrey;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .disppear{
+    animation: vanish 5s forwards;
+  }
+  @keyframes vanish {
+    100%{
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
